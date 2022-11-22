@@ -1,104 +1,77 @@
 <!DOCTYPE html>
-<html lang="pl">
-    <head>
-        <title>CV - Mateusz Rymar</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <img class="profile-picture circle" src="images/foto.jpg" alt="Zdjęcie profilowe Mateusza Rymara">
-                <div>
-                    <h1>Mateusz Rymar</h1>
-                    <span>Wannabe <a href="https://en.wikipedia.org/wiki/Front_end">Frontend</a> Developer</span>
-                    <div>
-                    <a class="cv-download-link" href="https://files.fm/u/chjx29bf4">Pobierz CV</a>
-                    </div>
-                </div>
-                <address>
-                    <ul>
-                        <li><img class="address-icon circle" src="images/phone.png" alt="aria-hidden"><b>Numer telefonu:</b> <a href="tel:696986569">696 986 569</a></li>
-                        <li><img class="address-icon circle" src="images/mail.png" alt="aria-hidden"><b>Email:</b> <a href="mailto:mateuszrymar@gmail.com">mateuszrymar@gmail.com</a></li>
-                        <li><img class="address-icon circle" src="images/birthday-cake.png" alt="aria-hidden"><b>Data urodzenia:</b>19 lipca 1990</li>
-                        <li><img class="address-icon circle" src="images/pin.png" alt="aria-hidden"><b>Miejsce zamieszkania:</b> Ustroń</li>
-                    </ul>
-                </address>
-            </header>
-            <main>
-                <section>
-                    <h2>O mnie</h2>        
-                    <p>
-                        Mam na imię <b>Mateusz</b>. 
-                        Dotychczas pracowałem jako Grafik 3D / Architekt. 
-                        Uczę się frontend developmentu.
-                        Yadda yadda yadda. Yadda yadda yadda.Yadda yadda yadda.Yadda yadda yadda.Yadda yadda yadda.Yadda yadda yadda.Yadda yadda yadda.
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateusz Rymar - home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!--This is the first project I built as my own, not from a tutorial. 
+        Of course, I'll be referencing stuff I made during my courses and looking at examples,
+        but the idea is to be as self-sufficient as I can.
+
+        This is my main site, so It'll evolve over time, too.-->
+</head>
+<body>
+    <div id="body-container">
+        <header>
+            <nav class="navbar-container">
+                <span>Front-end developer</span>
+                <span>Nov 2022 - Dec 2022</span>
+                <ul class="nav-list">
+                    <li class="nav-item">Projects</li>
+                    <li class="nav-item">Bio</li>
+                    <li class="nav-item">Contact</li>
+                </ul>
+            </nav>
+            
+            <h1 id="my-name">Mateusz Rymar</h1>
+            
+        </header>
+        
+        <main>
+            <div id="outer-container">
+                <div id="inner-container">
+                    <p id="motivationLetter" class="gallery-item">I'm a begginer front-end web developer looking for my first junior position. 
+                        So far, I've completed several courses on HTML, CSS and JavaScript. 
+                        I'm planning to explore UI/UX design principles and delve a little into back-end development in order to figure out which of these fields would fit me best.
+                        <br>
+                        <br>
+                        I'm coming into web development from arch-viz & architecture backgrounds.
+                        I found my passion for programming in 2010, when I attended a course in <a href="https://en.wikipedia.org/wiki/Grasshopper_3D">Grasshopper</a>
+                        , a visual programming language that allows to design buildings parametrically and develop custom tools. 
+                        I used Grasshopper in most of my projects troughout the years, however I felt limited by having never learnt any <em>proper</em> (text-based) programming languages, at least not until recently. 
+                        <br>
+                        <br> 
+                        My pivot into web development is a result of a combination of: interest in programming, 
+                        abundance of time and drive to learn new skills. I'm hoping to be able to apply some of my old skills to my new career in the near future. 
                     </p>
-                </section>
-                <section>
-                    <h2>Doświadczenie zawodowe</h2>
-                    <ul>
-                        <li>03.2021 - obecnie - PWD Architecture, Pekin, Chiny - Team leader</li>
-                        <li>2010 - 2021 - freelance</li>
-                        <li>09.2014 - 05.2019 - medusagroup, Bytom - Architekt</li>
-                        <li>09.2012 - 02.2013 - Coop Himmelb(l)au, Wiedeń, Austria - Praktykant</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Języki</h2>
-                    <ul>
-                        <li>Polski</li>
-                        <li>Angielsi</li>
-                        <li>Niemiecki</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Wykształcenie</h2>
-                    <ul>
-                        <li>2013 - ’15 - studia magisterskie - Architektura i Urbanistyka , Wydział Architektury Pol. Śl., Gliwice</li>
-                        <li>2009 - ’13 - studia inżynierskie - Architektura i Urbanistyka , Wydział Architektury Pol. Śl., Gliwice</li>
-                        <li>2006 - ’09 - <a href="https://lo5.bielsko.pl/">V Liceum Ogólnokształcące</a>, Bielsko - Biała</li>
-                    </ul>
-                </section>
-                <section>
-                <h2>Zainteresowania</h2>
-                    <ul class="hobbies">
-                        <li>
-                            <img src="images/bike.png" alt="aria-hidden">
-                            <div>
-                                <h3>Kolarstwo górskie i szosowe</h3>
-                                <p>Lubię jeździć po górskich ścieżkach i drogach.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/brush.png" alt="aria-hidden">
-                            <div>
-                                <h3>Grafika</h3>
-                                <p>Interesuję się grafiką komputerować, w szczególności 3D.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/camera.png" alt="aria-hidden">
-                            <div>
-                                <h3>Fotografia</h3>
-                                <p>Lubię robić i obrabiać zdjęcia.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/snow.png" alt="aria-hidden">
-                            <div>
-                                <h3>Narciarstwo</h3>
-                                <p>W zimie, gdy rzadziej jeżdżę na rowerze, wiatr we włosach dostarczają mi narty.</p>
-                            </div>
-                        <li>
-                            <img src="images/plane.png" alt="aria-hidden">
-                            <div>
-                                <h3>Podróże</h3>
-                                <p>...a w lecie nosi mnie po świecie.</p>
-                            </div>
-                        </li>                    
-                    </ul>
-                </section>
-            </main>
-        </div>
-    </body>
+
+                    <!-- Project gallery is inserted here in JavaScript -->
+
+                </div>
+
+            </div>
+            
+            
+        </main>
+        
+        <footer>
+            <hr>
+            <ul class="footer-list">
+                <li class="footer-item">GitHub</li>
+                <li class="footer-item">Behance</li>
+                <li class="footer-item">Instagram</li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
 </html>

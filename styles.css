@@ -1,0 +1,141 @@
+/* font-family: 'Manrope', sans-serif; */
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    background-color: rgb(235, 235, 235);
+    color: rgb(50, 50, 50);
+    padding: 1em 2.5em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#body-container {
+    /* background: lightgreen;
+    display: grid;
+    grid-template-areas: "header header"
+                         "content sidebar"
+                         "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    gap: 5px; */
+}
+
+.navbar-container {
+    display: flex;
+    gap: 5px;    
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+nav > span {
+    /* flex-grow: 1; */
+}
+
+nav > ul {
+    margin: 0em;
+    display: flex;
+    flex-direction: row;
+    justify-items: auto;
+    padding: 0em;
+    list-style-type: none;
+    /* flex-grow: 1; */
+}
+
+.nav-item {
+    flex-basis: 1em;
+    margin-left: 1em !important;
+    margin: 0em;
+}
+
+hr {
+    border-top: 1px solid rgba(50, 50, 50, 0.05);
+    margin: 0.2em 0;
+}
+
+
+#my-name {
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+    font-size: 5em;
+    margin: 0em;
+    position: relative;
+    bottom: 0.1em;
+}
+
+main {
+
+}
+
+#outer-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-gap: 0.5em;
+
+}
+#inner-container {
+    margin-top: 20em;
+    margin-bottom: 4em;
+    grid-column: 5 / 13;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: normal;
+    gap: 0.25em;
+
+}
+
+.gallery-item:first-child {
+    margin-bottom: 5em;
+    width: 100%; 
+
+}
+
+.gallery-item {
+    width: calc((100% - 2*0.25em)/3);
+    float: left;
+    position: relative;
+}
+
+.gallery-item > span {
+    color: rgb(235, 235, 235);
+    font-weight: 800;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.project-image{
+    z-index: -1;
+    width: 100%;
+    display: block;
+}
+
+img {
+    /* width: 33%; */
+
+}
+
+/* #project-gallery {
+    grid-column: 5 / 13;
+    grid-row: 1 / 5;
+
+} */
+
+
+
+.footer-list {
+    margin: 0em;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0em;
+    list-style-type: none;
+}
+
+.footer-item {
+    flex-basis: 1em;
+    margin-left: 1em !important;
+    margin: 0em;
+}
