@@ -76,6 +76,16 @@ hr {
     position: relative;
     bottom: 0.1em;
     line-height: 1em;
+    transition: text-shadow 0.2s ease,
+                transform 2s ease,
+                letter-spacing 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#my-name:hover {
+    /* font-weight: 800; */
+    transform: scale(1.01);
+    text-shadow: 2px 2px var(--mint);
+    letter-spacing: .02em;
 }
 
 main {
@@ -116,6 +126,18 @@ main {
     width: calc((100% - 2*0.25em)/3);
     min-width: 150px;
     position: relative;
+    transition: transform .4s ease-out;
+}
+
+.gallery-item:not(article):hover {
+    z-index: 1;
+    transform: scale(1.05);
+    /* box-shadow: 0px 0px 10px 2px var(--mint); */
+}
+
+.gallery-item:not(article):active {
+    z-index: 2;
+    transform: scale(10);
 }
 
 .gallery-item > span {
@@ -131,6 +153,7 @@ main {
     width: 100%;
     display: block;
 }
+
 
 form {
     margin-top: 10em;
@@ -172,16 +195,22 @@ form > h2 {
     right: 5px;
     background-color: var(--light-grey);
     border: 1px solid var(--transparent);
+    transition: background-color .5s ease,
+                color .5s ease,
+                transform .5s ease .1s;
 }
 
 #submit-button:hover {
     background-color: var(--mint);
+    transform: translateX(5px);
+
 }
 
 #submit-button:active {
     color: var(--light-grey);
-    font-weight: 800;
-    border: 1px solid var(--dark-grey);
+    /* font-weight: 800; */
+    /* border: 1px solid var(--dark-grey); */
+    transform: translateX(100vw);
 }
 
 .footer-list {
