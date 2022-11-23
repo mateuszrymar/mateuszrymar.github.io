@@ -1,11 +1,24 @@
 /* font-family: 'Manrope', sans-serif; */
 
+/* Color library */
+:root {
+    --light-grey: rgb(235, 235, 235);
+    --dark-grey:  rgb(50, 50, 50);
+    --transparent: rgba(50, 50, 50, 0.1);
+    --mint:  rgb(102, 240, 210);
+
+    --document-font: 'Manrope', sans-serif;
+}
+
+
+
+
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: var(--document-font);
     font-weight: 400;
     font-size: 0.8em;
-    background-color: rgb(235, 235, 235);
-    color: rgb(50, 50, 50);
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
     padding: 1em 2.5em;
     text-align: justify;
     text-justify: inter-word;
@@ -50,18 +63,19 @@ nav > ul {
 }
 
 hr {
-    border-top: 1px solid rgba(50, 50, 50, 0.05);
+    border-top: 1px solid var(--transparent);
     margin: 0.2em 0;
 }
 
 
 #my-name {
-    color: rgb(50, 50, 50);
+    color: var(--dark-grey);
     font-weight: 600;
     font-size: 5em;
-    margin: 0em;
+    margin: 0.5em 0em;
     position: relative;
     bottom: 0.1em;
+    line-height: 1em;
 }
 
 main {
@@ -84,7 +98,12 @@ main {
     flex-wrap: wrap;
     align-items: normal;
     gap: 0.25em;
+    position: relative;
+}
 
+#project-anchor {
+    display: flex;
+    width: 100%;
 }
 
 .gallery-item:first-child {
@@ -95,12 +114,12 @@ main {
 
 .gallery-item {
     width: calc((100% - 2*0.25em)/3);
-    float: left;
+    min-width: 150px;
     position: relative;
 }
 
 .gallery-item > span {
-    color: rgb(235, 235, 235);
+    color: var(--light-grey);
     font-weight: 800;
     position: absolute;
     top: 1em;
@@ -113,29 +132,110 @@ main {
     display: block;
 }
 
-img {
-    /* width: 33%; */
-
+form {
+    margin-top: 10em;
+    margin-bottom: 3em;
+    grid-column: 1 / 9;
+    max-width: 600px;
+    border: 1px solid var(--transparent);
+    padding: 1em;
+    position: relative;
 }
 
-/* #project-gallery {
-    grid-column: 5 / 13;
-    grid-row: 1 / 5;
+form > h2 {
+    margin: 0 0 1em 0;
+}
 
-} */
+.form-item > label {
+    display: inline-block;
+    width:25%;   
+    vertical-align: top;
+}
 
+.form-item > input, textarea {
+    font-family: var(--document-font);
+    width: calc(75% - 1em);
+    background-color: var(--light-grey);
+    border: 1px solid var(--transparent);
+}
 
+#message-input {
+    height: 4em;
+}
+
+#submit-button {
+    font-family: var(--document-font);
+    font-weight: 700;
+    margin-top: 1em;
+    float: right;
+    position: relative;
+    right: 5px;
+    background-color: var(--light-grey);
+    border: 1px solid var(--transparent);
+}
+
+#submit-button:hover {
+    background-color: var(--mint);
+}
+
+#submit-button:active {
+    color: var(--light-grey);
+    font-weight: 800;
+    border: 1px solid var(--dark-grey);
+}
 
 .footer-list {
     margin: 0em;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     padding: 0em;
     list-style-type: none;
+    column-gap: 2em;
 }
 
 .footer-item {
     flex-basis: 1em;
-    margin-left: 1em !important;
     margin: 0em;
+    flex-grow: 0;
+}
+
+#back-to-top {
+    flex-grow: 1;
+}
+
+
+@media (min-width: 1200px) {
+    body {
+        width: calc(1200px - 5em - 32px);
+        margin: 8px auto;
+    }    
+}
+
+
+@media (max-width: 800px) {
+    
+    .gallery-item {
+        width: calc((100% - 1*0.25em)/2);
+        min-width: 150px;
+        position: relative;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    
+    #site-built {
+        display: none;
+    }
+    
+    form {
+        grid-column: 1 / 13;
+    }
+
+    .gallery-item {
+        width: 100%;
+        min-width: 150px;
+        position: relative;
+    }
+    
 }

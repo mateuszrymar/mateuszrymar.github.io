@@ -21,12 +21,12 @@
     <div id="body-container">
         <header>
             <nav class="navbar-container">
-                <span>Front-end developer</span>
-                <span>Nov 2022 - Dec 2022</span>
+                <span id="job-description">Front-end developer</span>
+                <span id="site-built">Nov 2022</span>
                 <ul class="nav-list">
-                    <li class="nav-item">Projects</li>
-                    <li class="nav-item">Bio</li>
-                    <li class="nav-item">Contact</li>
+                    <a href="#project-anchor"><li class="nav-item">Projects</li></a>
+                    <a href="#motivation-letter"><li class="nav-item">Bio</li></a>
+                    <a href="#contact"><li class="nav-item">Contact</li></a>
                 </ul>
             </nav>
             
@@ -37,7 +37,7 @@
         <main>
             <div id="outer-container">
                 <div id="inner-container">
-                    <p id="motivationLetter" class="gallery-item">I'm a begginer front-end web developer looking for my first junior position. 
+                    <article id="motivationLetter" class="gallery-item">I'm a begginer front-end web developer looking for my first junior position. 
                         So far, I've completed several courses on HTML, CSS and JavaScript. 
                         I'm planning to explore UI/UX design principles and delve a little into back-end development in order to figure out which of these fields would fit me best.
                         <br>
@@ -50,12 +50,35 @@
                         <br> 
                         My pivot into web development is a result of a combination of: interest in programming, 
                         abundance of time and drive to learn new skills. I'm hoping to be able to apply some of my old skills to my new career in the near future. 
-                    </p>
+                        
+                    </article> 
+                    <h4 id="project-anchor">My projects:</h4>                   
 
-                    <!-- Project gallery is inserted here in JavaScript -->
+                    <!-- Project gallery is inserted here inside JavaScript -->
 
                 </div>
+                <form id="contact">
+                    <h2>Contact me</h2>
+                    <div id="form-table">
+                        <div class="form-item">
+                            <label for="name-input">Your name:</label>
+                            <input type="text" id="name-input" placeholder=" name">
+                        </div>
+                        <div class="form-item">
+                            <label for="email-input">Your email:</label>
+                            <input type="email" id="name-input" placeholder=" email">
+                        </div>
+                        <div class="form-item">
+                            <label for="message-input">Your message:</label>
+                            <textarea type="text" id="message-input" placeholder=" message"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" id="submit-button">
 
+
+
+
+                </form>
             </div>
             
             
@@ -64,9 +87,10 @@
         <footer>
             <hr>
             <ul class="footer-list">
-                <li class="footer-item">GitHub</li>
-                <li class="footer-item">Behance</li>
-                <li class="footer-item">Instagram</li>
+                <span class="footer-item" id="back-to-top"><a href="#body-container">^ Back to top</a></span>
+                <span class="footer-item"><a href="https://github.com/mateuszrymar">GitHub</a></span>
+                <span class="footer-item">Behance</span>
+                <span class="footer-item">Instagram</span>
             </ul>
         </footer>
     </div>
