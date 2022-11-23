@@ -1,2 +1,2 @@
 # mateuszrymar.github.io
-This is my first HTML + CSS project, based on a tutorial.
+This is my portfolio page, developed as a personal project.
